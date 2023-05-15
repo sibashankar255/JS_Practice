@@ -7,3 +7,8 @@
 
 //DOM(Document object model)-> tree like structure representing the HTML elements in the browser.
 //CSSOM(CSS object model)-> tree like structure representing the css properties on each element.
+
+//HTML parser->  
+//CSS parser-> 
+//JavaScript V8 engine ->js-interpretor uses this engine to converting user readable code to machine readable code
+//
