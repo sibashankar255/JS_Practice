@@ -1,3 +1,5 @@
+Write a blog on the difference between document and window objects
+
 Introduction:
 In the world of JavaScript, the document and window objects play vital roles in web development. 
 Both objects are essential for manipulating and interacting with web pages. In this blog post, we will 
