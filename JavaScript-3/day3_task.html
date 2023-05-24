@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log('hello world there');
+
+        //1.how to compare 2 json have same properties without order?
+        let obj1 = {name: "person 1", age: 5};
+        let obj2 = {age: 5, name: "person 1"};
+        let obj1String = JSON.stringify(obj1);
+        let obj2String = JSON.stringify(obj2);
+        if (obj1String === obj2String) {
+            console.log("The JSON objects are equal.");
+        } else {
+            console.log("The JSON objects are not equal.");
+        }
+
+        function myFunc(){
+            var xmlHTTP = new XMLHttpRequest();//initialize the XMLHTTPRequest
+            xmlHTTP.open('GET','https://restcountries.com/v3.1/all',true); //hitting the url
+            xmlHTTP.send();//sending the req
+
+            //get the response
+            xmlHTTP.onreadystatechange = function(){
+                console.log(xmlHTTP.responseText);//printing the response
+                //document.getElementById('all').innerHTML = xmlHTTP.responseText;
+            }
+        }
+        myFunc();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

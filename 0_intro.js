@@ -7,3 +7,5 @@
 //if adding one file - git add file_name
 //commit all your changes - git commit -m "give the meaningful message"
 //push all your changes - git push
+
+//ecmaScript

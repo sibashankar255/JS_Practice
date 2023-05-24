@@ -23,9 +23,9 @@ var firstName = 'virat';
 var secondName = 'kohli';
 console.log(`Full name:  ${firstName} ${secondName}`);
 
-//var -> can be reassigned and redeclared(global scope)
-//let -> can be reassigned but not redeclared(block scope)
-//const -> cannot be reassigned and cannot be redeclared(block scope)
+// var -> can be reassigned and redeclared(global scope)
+// let -> can be reassigned but not redeclared(block scope)
+// const -> cannot be reassigned and cannot be redeclared(block scope)
 
 var name = 'john';
 name = 'Rohit';//reassignment

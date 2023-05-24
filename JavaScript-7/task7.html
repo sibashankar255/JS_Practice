@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My WebPage</title>
+ 
+    <link rel="stylesheet" href="./style.css">
+    <script>
+      function myFunc(){
+            var xmlHTTP = new XMLHttpRequest();  //initialize the XMLHTTPReq.
+            xmlHTTP.open('GET', 'https://restcountries.com/v3.1/all', true); // hitting the URL 
+            xmlHTTP.send(); //sending the req;
+ 
+            //get the response
+            xmlHTTP.onreadystatechange = function(){
+                // console.log(xmlHTTP.responseText);  //printing the response.
+                // document.getElementById('users').innerHTML = xmlHTTP.responseText;
+ 
+                const jsonData = JSON.parse(xmlHTTP.responseText);
+ 
+                //GET ALL COUNTRIES IN ASIA
+                const asianCountries = jsonData.filter();
+                console.log('Countries in Asia: ', asianCountries);
+ 
+ 
+                //COUNTRIES LESS THAN 200000 POPULATION
+                const countiesUnder2Lakh = jsonData.filter();
+                console.log('Countries under 2 Lakh Population: ', countiesUnder2Lakh);
+ 
+ 
+                //NAME, Capital, Flag
+                jsonData.forEach((country) => {
+                    //PRINT the data
+                })
+ 
+ 
+                //TOTAL POPULATION
+                const totalPopulation = jsonData.reduce();
+                console.log('Total Popuilation: ', totalPopulation);
+ 
+                //COUNTRY WITH US DOLLAR
+                const countryWithUSD = jsonData.find();
+                console.log('Country with USD: ', countryWithUSD);
+            }
+        }
+ 
+    </script>
+</head>
+<body>
+    <h1>Hello World from Farook J</h1>
+    <div id="users"></div>
+    <button onclick="myFunc()">Click Me.</button>
+</body>
+</html>
